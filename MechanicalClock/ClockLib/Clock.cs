@@ -1,6 +1,10 @@
 ﻿namespace ClockLib
 {
-    public class Clock
+    public interface IClock
+    {
+        DateTime Time { get { return DateTime.Now; } }
+    }
+    public class Clock : IClock
     {
 
     }
